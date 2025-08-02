@@ -1,0 +1,476 @@
+.professionel-page {
+    min-height: 100vh;
+    width: 110%;
+    background: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .professionel-header {
+    padding: 4rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .professionel-content {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .professionel-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #34c759;
+    margin-bottom: 1rem;
+  }
+  
+  .professionel-description {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    margin-right:10px ;
+  }
+  
+  .professionel-actions .professionel-button {
+    background-color: #34c759;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .professionel-actions .professionel-button:hover {
+    background-color: #34c759;
+  }
+  
+  .professionel-images {
+    flex: 1;
+    position: relative;
+    max-width: 50%;
+  }
+  
+  .professionel-image-overlay {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .professionel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .overlay-image {
+    position: absolute;
+    top: 60%;
+    left: -5%;
+    width: 70%;
+    height: 70%;
+    z-index: 1;
+    border: 4px solid #34c759;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .professionel-overlay-text:first-child {
+    top: 10%;
+    right: 10%;
+  }
+  
+  .expert-text {
+    top: 60%;
+    right: 10%;
+    background-color: #e74c3c;
+  }
+  
+  @media (max-width: 768px) {
+    .professionel-header {
+      flex-direction: column;
+      padding: 2rem 1rem;
+    }
+  
+    .professionel-content,
+    .professionel-images {
+      max-width: 100%;
+    }
+  
+    .professionel-image-overlay {
+      height: 300px;
+    }
+  
+    .overlay-image {
+      top: 15%;
+      left: 15%;
+      width: 70%;
+      height: 70%;
+    }
+  
+    .professionel-title {
+      font-size: 2rem;
+    }
+  
+    .professionel-description {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .professionel-image-overlay {
+      height: 200px;
+    }
+  
+    .professionel-title {
+      font-size: 1.5rem;
+    }
+  
+    .professionel-description {
+      font-size: 0.9rem;
+    }
+  
+    .overlay-image {
+      top: 10%;
+      left: 10%;
+      width: 80%;
+      height: 80%;
+    }
+  }
+
+  .photovoltaic-solutions {
+    background: #fff;
+    padding: 3rem 1rem;
+    width: 100%;
+  }
+  
+  .photovoltaic-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .photovoltaic-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .photovoltaic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .photovoltaic-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .photovoltaic-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .photovoltaic-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .photovoltaic-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .photovoltaic-icon-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(52, 199, 89, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .photovoltaic-icon {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .photovoltaic-content {
+    padding: 1.5rem;
+  }
+  
+  .photovoltaic-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #34c759;
+    margin-bottom: 1rem;
+  }
+  
+  .photovoltaic-description {
+    font-size: 1rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .photovoltaic-features {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .photovoltaic-features li {
+    font-size: 0.9rem;
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .feature-icon {
+    color: #34c759;
+    font-size: 1rem;
+  }
+
+  .photovoltaic-actions {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .photovoltaic-button {
+    background: #34c759;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  .photovoltaic-button:hover {
+    background: #2aa644;
+    transform: scale(1.05);
+    color: #f0f2f5;
+  }
+
+  @media (max-width: 768px) {
+  
+    .photovoltaic-solutions {
+      padding: 2rem 0.5rem;
+    }
+  
+    .photovoltaic-title {
+      font-size: 1.8rem;
+    }
+  
+    .photovoltaic-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  
+    .photovoltaic-image-container {
+      height: 180px;
+    }
+  
+    .photovoltaic-subtitle {
+      font-size: 1.3rem;
+    }
+  
+    .photovoltaic-description {
+      font-size: 0.9rem;
+    }
+  
+    .photovoltaic-features li {
+      font-size: 0.85rem;
+    }
+    .photovoltaic-button {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .photovoltaic-title {
+      font-size: 1.5rem;
+    }
+  
+    .photovoltaic-image-container {
+      height: 160px;
+    }
+  
+    .photovoltaic-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .photovoltaic-description {
+      font-size: 0.85rem;
+    }
+  
+    .photovoltaic-features li {
+      font-size: 0.8rem;
+    }
+  
+    .photovoltaic-icon-overlay {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .photovoltaic-icon {
+      font-size: 1.2rem;
+    }
+
+    .photovoltaic-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+      }
+  }
+
+
+.electric-charging {
+    background: #f8f9fa;
+    padding: 3rem 1rem;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  
+  .electric-charging-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .electric-charging-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .electric-charging-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .electric-charging-image-container {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .electric-charging-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .electric-charging-image:hover {
+    transform: scale(1.02);
+  }
+  
+  .electric-charging-text {
+    flex: 1;
+    padding: 1.5rem;
+  }
+  
+  .electric-charging-description {
+    font-size: 1rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .electric-charging-button {
+    background: #34c759;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  .electric-charging-button:hover {
+    background: #2aa644;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .electric-charging {
+      padding: 2rem 0.5rem;
+    }
+  
+    .electric-charging-title {
+      font-size: 1.8rem;
+    }
+  
+    .electric-charging-content {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .electric-charging-image-container {
+      max-width: 100%;
+    }
+  
+    .electric-charging-image {
+      height: 250px;
+    }
+  
+    .electric-charging-text {
+      padding: 1rem;
+    }
+  
+    .electric-charging-description {
+      font-size: 0.9rem;
+    }
+  
+    .electric-charging-button {
+      padding: 0.7rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .electric-charging-title {
+      font-size: 1.5rem;
+    }
+  
+    .electric-charging-image {
+      height: 200px;
+    }
+  
+    .electric-charging-description {
+      font-size: 0.85rem;
+    }
+  
+    .electric-charging-button {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.85rem;
+    }
+  }

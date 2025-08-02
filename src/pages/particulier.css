@@ -1,0 +1,390 @@
+.particulier-page {
+    min-height: 100vh;
+    width: 110%;
+    background: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .particulier-header {
+    padding: 4rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .particulier-content {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .particulier-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #34c759;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  .particulier-description {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+  }
+  
+  .particulier-image-container {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .particulier-image {
+    width: 110%;
+    height: 630px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .particulier-image:hover {
+    transform: scale(1.02);
+  }
+  
+  @media (max-width: 768px) {
+    .particulier-header {
+      flex-direction: column;
+      padding: 2rem 1rem;
+    }
+  
+    .particulier-content,
+    .particulier-image-container {
+      max-width: 100%;
+    }
+  
+    .particulier-title {
+      font-size: 2rem;
+    }
+  
+    .particulier-description {
+      font-size: 1rem;
+    }
+  
+    .particulier-image {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .particulier-title {
+      font-size: 1.5rem;
+    }
+  
+    .particulier-description {
+      font-size: 0.9rem;
+    }
+  
+    .particulier-image {
+      height: 200px;
+    }
+  }
+
+
+  .solar-offer {
+    background: #fff;
+    padding: 3rem 1rem;
+    width: 100%;
+  }
+  
+  .solar-offer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .solar-offer-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .solar-offer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .solar-offer-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .solar-offer-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .solar-offer-image-container {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .solar-offer-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .solar-offer-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .solar-offer-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #34c759;
+    margin-bottom: 1rem;
+  }
+  
+  .solar-offer-description {
+    font-size: 1rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+  
+  .solar-offer-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+  
+  .solar-offer-features li {
+    font-size: 0.9rem;
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .solar-offer-icon {
+    color: #34c759;
+    font-size: 1rem;
+  }
+  
+  .solar-offer-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+  }
+  
+  .solar-offer-button {
+    background: #34c759;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .solar-offer-button:hover {
+    background: #2aa644;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .solar-offer {
+      padding: 2rem 0.5rem;
+    }
+  
+    .solar-offer-title {
+      font-size: 1.8rem;
+    }
+  
+    .solar-offer-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  
+    .solar-offer-image-container {
+      height: 180px;
+    }
+  
+    .solar-offer-subtitle {
+      font-size: 1.3rem;
+    }
+  
+    .solar-offer-description {
+      font-size: 0.9rem;
+    }
+  
+    .solar-offer-features li {
+      font-size: 0.85rem;
+    }
+  
+    .solar-offer-button {
+      padding: 0.7rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .solar-offer-title {
+      font-size: 1.5rem;
+    }
+  
+    .solar-offer-image-container {
+      height: 160px;
+    }
+  
+    .solar-offer-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .solar-offer-description {
+      font-size: 0.85rem;
+    }
+  
+    .solar-offer-features li {
+      font-size: 0.8rem;
+    }
+  
+    .solar-offer-button {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.85rem;
+    }
+  }
+
+
+  .realizations {
+    background: #f8f9fa;
+    padding: 3rem 1rem;
+    width: 100%;
+  }
+  
+  .realizations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  
+  .realizations-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .realizations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .realization-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .realization-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .realization-image-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+  }
+  
+  .realization-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .realization-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .realization-card:hover .realization-overlay {
+    opacity: 1;
+  }
+  
+  .realization-overlay-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .realizations {
+      padding: 2rem 0.5rem;
+    }
+  
+    .realizations-title {
+      font-size: 1.8rem;
+    }
+  
+    .realizations-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  
+    .realization-image-container {
+      height: 200px;
+    }
+  
+    .realization-overlay-title {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .realizations-title {
+      font-size: 1.5rem;
+    }
+  
+    .realizations-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .realization-image-container {
+      height: 180px;
+    }
+  
+    .realization-overlay-title {
+      font-size: 1rem;
+    }
+  }
